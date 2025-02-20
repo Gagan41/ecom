@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { assets } from "../assets/assets";
 
 const Footer = () => {
@@ -20,11 +22,25 @@ const Footer = () => {
 
         <div>
           <p className="text-xl font-medium mb-5">COMPANY</p>
-          <ul className="flex flex-col gap-1 text-gray-600">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Delivery</li>
-            <li>Privacy policy</li>
+          <ul className="flex flex-col gap-2 text-gray-600">
+            <li className="flex items-center gap-2">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} className="text-xl" />
+              </a>
+              Instagram
+            </li>
+            <li className="flex items-center gap-2">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} className="text-xl" />
+              </a>
+              Facebook
+            </li>
+            <li className="flex items-center gap-2">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faXTwitter} className="text-xl" />
+              </a>
+              X
+            </li>
           </ul>
         </div>
 
