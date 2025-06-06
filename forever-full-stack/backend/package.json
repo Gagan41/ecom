@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
-  "scripts": {
-    "server": "node server.js",
-    "mailer": "node mailerServer.js",
-    "start:all": "concurrently \"npm run server\" \"npm run mailer\""
+ "scripts": {
+    "backend": "node server.js",
+    "mailer": "node mailerserver.js",
+    "dev": "concurrently \"npm run backend\" \"npm run mailer\"",
+    "start:all": "npm run dev"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.4.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
@@ -24,6 +26,7 @@
     "nodemon": "^3.1.4",
     "razorpay": "^2.9.4",
     "stripe": "^16.8.0",
+    "uniqid": "^5.4.0",
     "validator": "^13.12.0"
   },
   "devDependencies": {
